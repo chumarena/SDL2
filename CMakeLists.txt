@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(Lab3)
+project(Lab3)#здесь надо указать рабочую папку
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -8,7 +8,7 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(SDL2 REQUIRED sdl2)
 pkg_check_modules(SDL2_TTF REQUIRED SDL2_ttf)
 
-add_executable(app 
+add_executable(app#здесь надо указать рабочие файлы
     main.cpp
     Dialog.cpp
     Menu.cpp
@@ -26,7 +26,7 @@ if(WIN32)
     target_link_libraries(app PRIVATE mingw32)
 endif()
 
-set(SOURCES
+set(SOURCES#здесь надо указать рабочие файлы
     main.cpp
     Dialog.cpp
     Menu.cpp
