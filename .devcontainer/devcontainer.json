@@ -12,13 +12,13 @@
             ]
         }
     },
-    "workspaceFolder": "/workspace/Lab2",#здесь надо указать рабочую папку
+    "workspaceFolder": "/workspace/Lab2",//здесь надо указать рабочую папку
     "remoteUser": "developer",
     "runArgs": [
         "--init",
         "--env", "DISPLAY=host.docker.internal:0",
         "--volume", "/tmp/.X11-unix:/tmp/.X11-unix:rw",
-        "--volume", "${localWorkspaceFolder}:/workspace/Lab3"#здесь надо указать рабочую папку
+        "--volume", "${localWorkspaceFolder}:/workspace/Lab3"//здесь надо указать рабочую папку
     ],
     "containerEnv": {
         "DISPLAY": "host.docker.internal:0"
@@ -26,3 +26,4 @@
     "postCreateCommand": "mkdir -p build && cmake -S. -B build -DCMAKE_BUILD_TYPE=Debug"
 
 }
+
